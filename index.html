@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Resumex - Professional HTML CSS Resume Website Template</title>
+    <title>Felipe González - Personal Website</title>
 
 
     <!-- favicon -->
@@ -61,6 +61,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- JS-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
 </head>
@@ -617,7 +620,7 @@
                           <!--<button type="button" class="btn btn-primary" >-->
                     </div>
 
-                    <div class="gallery-text" data-toggle="modal" data-target="#ModalMoneyScanner">
+                    <div class="gallery-text" data-toggle="modal" id="openYoutube" data-target="#ModalMoneyScanner">
                         <h2>Money$canner on TV</h2>
                         <!--<small>domain.com</small>-->
                     </div>
@@ -632,7 +635,7 @@
                           <img  src="images_felipe/polimi.png" alt="" >
                       </div>
 
-                      <div class="gallery-text" data-toggle="modal" data-target="#erasmus">
+                      <div class="gallery-text" data-toggle="modal" id="openVimeo" data-target="#erasmus">
                           <h2>Exchange Experience Interview</h2>
                           <!--<small>domain.com</small>-->
                       </div>
@@ -789,27 +792,26 @@
 <script src="js/theia-sticky-sidebar.js"></script>
 <script src="js/scripts.js"></script>
 
-
 <!-- Modal -->
 <div class="modal fade" id="ModalMoneyScanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Money$canner - Android application made for visually impaired people</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLongTitle">Money$canner - Android application made for visually impaired people
+        <button type="button" class="close" id="closeYoutube" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        </h5>
       </div>
       <div class="modal-body">
         Four classmates and I created Mone$canner, application for android mobile devices focused on people with visual disabilities. The app can recognize Latin American banknotes. It also has a monetary converter and warns to the user if the return delivered in the monetary transaction is incorrect. This product has appeared in radio, newspaper and television.
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RZ3Si7J65gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="videoWrapper" id="videoWrapperYoutube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RZ3Si7J65gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+
+
       </div>
-      <!--
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-      -->
+
     </div>
   </div>
 </div>
@@ -818,24 +820,21 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle"> Exchange Experience Interview</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLongTitle">Exchange Experience Interview
+        <button type="button" class="close" id="closeVimeo" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        </h5>
       </div>
       <div class="modal-body">
         I was an exchange student at Politecnico di Milano, Italy during 2016. I was interviewed about my experience during my stay. The next video aims to motivate
         students from my university to do the same.
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/224532004" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+        <div style="padding:56.25% 0 0 0;position:relative;" id="videoWrapperVimeo"><iframe src="https://player.vimeo.com/video/224532004" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <!--<p><a href="https://vimeo.com/224532004">AP33V1 Felipe González - Marcelo Ibáñez</a> from <a href="https://vimeo.com/leonfindel">LEONFINDEL</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
 
       </div>
-      <!--
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-      -->
+
     </div>
   </div>
 </div>
@@ -843,10 +842,11 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">High School Programming Tutor</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">High School Programming Tutor
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        </h5>
       </div>
       <div class="modal-body">
         <p>
@@ -870,10 +870,11 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Tech Event Colaborator</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Tech Event Colaborator
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        </h5>
       </div>
       <div class="modal-body">
         <p>
@@ -897,7 +898,41 @@
   </div>
 </div>
 
+<script>
+$(document).ready(function() {
+   // set unique id to videoplayer for the Webflow video element
+   var src1 = $('#videoWrapperYoutube').children('iframe').attr('src');
+   var src2 = $('#videoWrapperVimeo').children('iframe').attr('src');
 
+   $('#openYoutube').click(function(e) {
+     e.preventDefault();
+     // change the src value of the video
+     $('#videoWrapperYoutube').children('iframe').attr('src', src1);
+     $('.popup-bg').fadeIn();
+   });
+
+   $('#openVimeo').click(function(e) {
+     e.preventDefault();
+     // change the src value of the video
+     $('#videoWrapperVimeo').children('iframe').attr('src', src2);
+     $('.popup-bg').fadeIn();
+   });
+
+   // when object with class close-popup is clicked...
+   $('#closeYoutube').click(function(e) {
+     e.preventDefault();
+     $('#videoWrapperYoutube').children('iframe').attr('src', '');
+     $('.popup-bg').fadeOut();
+   });
+
+   $('#closeVimeo').click(function(e) {
+     e.preventDefault();
+     $('#videoWrapperVimeo').children('iframe').attr('src', '');
+     $('.popup-bg').fadeOut();
+   });
+});
+
+</script>
 
 </body>
 </html>
