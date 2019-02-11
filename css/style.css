@@ -71,8 +71,8 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    /*color              : #FFC107;*/
-    color: #0d64dd
+    color              : #FFC107;
+    /*color: #0d64dd*/
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -478,15 +478,63 @@ button:focus,
 .portfolio-item .portfolio-info small {
     color : #ffffff;
     }
+/*
+.portfolio-item:hover .portfolio-thumb{
+  opacity: 0.5
 
+
+  }
+*/
+/*
 .portfolio-item:hover .portfolio-info {
     background : -webkit-linear-gradient(
             top,
             transparent 0%,
-            #000 100%
+
+            #0d64dd 100%
     );
     }
+*/
 
+
+.gallery-text{
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    /*width: 300px;
+    height: 200px;*/
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+     vertical-align:middle;
+     line-height:200px;
+}
+
+.gallery-text:hover{
+    opacity: 1;
+}
+
+.gallery-text h3{
+    color: white;
+    display: inline-table;
+     vertical-align:middle;
+     line-height:100%;
+}
+
+.gallery-text h2{
+    color: white;
+    display: inline-table;
+     vertical-align:middle;
+     line-height:100%;
+}
+
+.modal-body{
+  /*text-align: justify;*/
+  /*text-justify: inter-word;*/
+}
 /*-------------------
  * Content Item
  *-------------------*/
