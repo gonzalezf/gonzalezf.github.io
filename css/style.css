@@ -341,6 +341,35 @@ button:focus,
     display       : block;
     font-size     : 12px;
     color         : #333333;
+    width         : 44px;
+    height        : 44px;
+    line-height   : 43px;
+    text-align    : center;
+    border-radius : 5px;
+    /*border        : 2px solid #eeeeee;*/
+    }
+
+.social-icon li a:hover {
+    border-color : #cccccc;
+    }
+
+/*
+
+.social-icon {
+    margin  : 20px 0;
+    padding : 0;
+    display : block;
+    }
+
+.social-icon li {
+    display : inline-block;
+    margin  : 0 2px;
+    }
+
+.social-icon li a {
+    display       : block;
+    font-size     : 12px;
+    color         : #333333;
     width         : 34px;
     height        : 34px;
     line-height   : 33px;
@@ -352,6 +381,8 @@ button:focus,
 .social-icon li a:hover {
     border-color : #cccccc;
     }
+
+*/
 
 /*-------------------
  * Expertise
