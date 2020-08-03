@@ -72,7 +72,7 @@ h6 {
  *------------------------------------------*/
 a {
     /*color              : #FFC107;*/
-    color: #ff9800;
+    color: #fa5a15;
     /*color: #0d64dd*/
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
@@ -93,7 +93,7 @@ a:hover,
 a:focus {
     text-decoration : none;
     /*color           : #ff9800;*/
-    color: #ff4502;
+    color: #F01302;/* #ff4502;*/
     }
 
 p {
@@ -257,7 +257,7 @@ button:focus,
 
 .section-title h2 {
     margin-bottom : 5px;
-    color         : #bebece;
+    color         : #868693;/*#9393A4;/* #bebece;*/
     }
 
 /*-----------------------------
